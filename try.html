@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+<video id="myVideo" width="320" height="176">
+  <source src="C:\Users\Poonam\Desktop\my.mp4" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1MKHYk5NpL4KhWKIU-qHGkDx-70CTRCha/view?usp=share_link" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body>
+</html>
